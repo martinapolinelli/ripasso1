@@ -6,13 +6,17 @@ public class Cerchio extends Forma {
         this.raggio = raggio;
     }
 
-    @Override
-    public double area() {
-        return raggio * raggio * Math.PI;
+    public void setRaggio(double raggio) {
+        this.raggio = raggio;
     }
 
     public double getRaggio() {
         return raggio;
+    }
+
+    @Override
+    public double area() {
+        return raggio * raggio * Math.PI;
     }
 
     @Override
@@ -25,9 +29,6 @@ public class Cerchio extends Forma {
         return extracted();
     }
 
-    public void setRaggio(double raggio) {
-        this.raggio = raggio;
-    }
 
     private double extracted() {
         return 2*raggio*Math.PI;
